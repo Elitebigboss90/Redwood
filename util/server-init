@@ -1,0 +1,25 @@
+#!/bin/bash
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+
+cd $DIR/../
+. ./meta/env
+
+[ ! -d $DIR/../meta/server ] && echo "Please symlink a server from avalon to /meta/server before release" && exit 1
+. $DIR/../meta/server/env
+
+
+ssh $ServerUser@$ServerIP -i $ServerRSA "sudo apt-get install mongodb tmux screen nginx"
+ssh $ServerUser@$ServerIP -i $ServerRSA "curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -"
+ssh $ServerUser@$ServerIP -i $ServerRSA "sudo apt-get install -y nodejs"
+
+cat <<EOF | ssh $ServerUser@$ServerIP -i $ServerRSA "cat << EOF > /home/$ServerUser/.screenrc"
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c%{g}]'
+EOF

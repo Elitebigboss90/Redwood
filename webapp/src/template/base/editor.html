@@ -1,0 +1,40 @@
+<div class="backdrop {{readonly}}">
+    <div class="dialog {{name}}" data-id="dialog">
+        <div class="title-area">
+            <div class="title">
+                {{title}}
+            </div>
+            <div data-id="close" class="close-button">
+                <i class="icon -close"></i>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="content-area scrollable">
+                <div class="form" data-id="container"></div>
+            </div>
+            <div class="action-area">
+                <div class="button" data-id="cancel">
+                    关闭
+                </div>
+                <div class="button -accent confirm-button" data-id="confirm">
+                    保存
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    &.readonly {
+        >.dialog>.content-area>.action-area>.confirm-button {
+            display: none;
+        }
+    }
+</style>
+
+<script data-role="init">
+    ({
+        title: "编辑"
+    })
+
+</script>

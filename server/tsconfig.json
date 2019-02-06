@@ -1,0 +1,18 @@
+{
+    "compilerOptions":{
+        "target": "ES5",
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "lib":["DOM","ES5","ES6","ES2015.Iterable","ES2015.Promise"],
+        "module":"commonjs",
+        "strict":false
+    },
+    "include":[
+        "src/**/*.ts",
+        "src/service/*.ts",
+        "src/spec/*.ts",
+        "src/spec/type.d.ts",
+        "src/*.ts",
+        "test/**/*.ts"
+    ]
+}

@@ -1,0 +1,1004 @@
+25109
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://0.0.0.0:25109/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:24461) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+2018-07-28T03:35:20.798Z 'Uncaught Fatal error' { Error: listen EADDRINUSE 0.0.0.0:25109
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1351:14)
+    at listenInCluster (net.js:1392:12)
+    at doListen (net.js:1501:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 25109 }
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 25109 --host 0.0.0.0 --project-name fzs-redwood --project-domain mutoumulao.com
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 25109 --host 0.0.0.0 --project-name fzs-redwood --project-domain mutoumulao.com
+25109
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://0.0.0.0:25109/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25042) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+2018-07-28T03:47:19.546Z 'Uncaught Fatal error' { Error: listen EADDRINUSE 0.0.0.0:25109
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1351:14)
+    at listenInCluster (net.js:1392:12)
+    at doListen (net.js:1501:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 25109 }
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 25109 --host 0.0.0.0 --project-name fzs-redwood --project-domain mutoumulao.com
+27017
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://127.0.0.1:27017/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25252) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+2018-07-28T03:53:52.175Z 'Uncaught Fatal error' { Error: listen EADDRINUSE 127.0.0.1:27017
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1351:14)
+    at listenInCluster (net.js:1392:12)
+    at doListen (net.js:1501:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 27017 }
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 27017 --host 127.0.0.1 --project-name fzs-redwood --project-domain mutoumulao.com
+10096
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://127.0.0.1:10096/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25323) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+Express listen at 127.0.0.1:10096
+Service [32mExpressService[39m Initialized
+Initializing [32mBlobService[39m
+Service [32mBlobService[39m Initialized
+Initializing [32mUploadService[39m
+Service [32mUploadService[39m Initialized
+Initializing [32mTTLSessionStorage[39m
+Service [32mTTLSessionStorage[39m Initialized
+Initializing [32mAuthenticationService[39m
+Service [32mAuthenticationService[39m Initialized
+Initializing [32mAccountService[39m
+Service [32mAccountService[39m Initialized
+Initializing [32mAccountPropService[39m
+Service [32mAccountPropService[39m Initialized
+Initializing [32mPaginateService[39m
+Service [32mPaginateService[39m Initialized
+Initializing [32mAccountQueryService[39m
+Service [32mAccountQueryService[39m Initialized
+Initializing [32mIncrementalIdService[39m
+Service [32mIncrementalIdService[39m Initialized
+Initializing [32mMemoryLockService[39m
+Service [32mMemoryLockService[39m Initialized
+Initializing [32mContactService[39m
+Service [32mContactService[39m Initialized
+Initializing [32mRouteSessionService[39m
+Service [32mRouteSessionService[39m Initialized
+Initializing [32mWechatService[39m
+Service [32mWechatService[39m Initialized
+Initializing [32mWechatPaymentService[39m
+Service [32mWechatPaymentService[39m Initialized
+Initializing [32mShopService[39m
+Service [32mShopService[39m Initialized
+Initializing [32mAutoTaskService[39m
+Service [32mAutoTaskService[39m Initialized
+Initializing [32mEndlessService[39m
+Service [32mEndlessService[39m Initialized
+Initializing [32mInitService[39m
+Service [32mInitService[39m Initialized
+Initializing [32mKeyValueStorage[39m
+Service [32mKeyValueStorage[39m Initialized
+Initializing [32mPlatformService[39m
+Service [32mPlatformService[39m Initialized
+Initializing [32mOrderExtraService[39m
+Service [32mOrderExtraService[39m Initialized
+Initializing [32mPhoneValidationService[39m
+Service [32mPhoneValidationService[39m Initialized
+Initializing [32mPostService[39m
+Service [32mPostService[39m Initialized
+Initializing [32mPostExtraService[39m
+Service [32mPostExtraService[39m Initialized
+Initializing [32mTransportService[39m
+Service [32mTransportService[39m Initialized
+Initializing [32mapi.accountProp[39m
+Service [32mapi.accountProp[39m Initialized
+[33mPOST[39m => [33m/api/account/prop/updates[39m ~ Install [33mupdateAccount[39m
+Initializing [32mapi.accountQuery[39m
+[33mPOST[39m => [33m/api/account/paginate/GET[39m ~ Install [33mqueryAccountsAsPaginate[39m
+Service [32mapi.accountQuery[39m Initialized
+Initializing [32mapi.authenticating[39m
+[33mPOST[39m => [33m/api/register/phone[39m ~ Install [33mregisterWithPhone[39m
+[33mPOST[39m => [33m/api/register/phone/code[39m ~ Install [33msendPhoneVerificationCode[39m
+[33mPOST[39m => [33m/api/register/phone/token/GET[39m ~ Install [33mgetTokenByPhone[39m
+[33mPOST[39m => [33m/api/register/code/token/GET[39m ~ Install [33mgetTokenByCode[39m
+[33mPOST[39m => [33m/api/account/wechat/openId/GET[39m ~ Install [33mgetWechatOpenIdByCode[39m
+[33mPOST[39m => [33m/api/register/wechat/token/GET[39m ~ Install [33mgetTokenByWechat[39m
+[33mPOST[39m => [33m/api/account/bind/wechat[39m ~ Install [33mbindWechat[39m
+[33mPOST[39m => [33m/api/account/current[39m ~ Install [33mgetCurrentAccount[39m
+[33mPOST[39m => [33m/api/account/authentications/GET[39m ~ Install [33mgetAccountAuthentications[39m
+[33mPOST[39m => [33m/api/account/update/password[39m ~ Install [33mupdatePassword[39m
+Service [32mapi.authenticating[39m Initialized
+Initializing [32mapi.echo[39m
+[33mPOST[39m => [33m/api/echo/:name/GET[39m ~ Install [33mecho[39m
+Service [32mapi.echo[39m Initialized
+Initializing [32mapi.platform[39m
+[33mPOST[39m => [33m/api/platform/information[39m ~ Install [33msetInformation[39m
+[33mPOST[39m => [33m/api/platform/information/GET[39m ~ Install [33mgetInformation[39m
+Service [32mapi.platform[39m Initialized
+Initializing [32mapi.posting[39m
+[33mPOST[39m => [33m/api/post[39m ~ Install [33mcreatePost[39m
+[33mDELETE[39m => [33m/api/post/:postId[39m ~ Install [33mdeletePost[39m
+[33mPOST[39m => [33m/api/post/:postId[39m ~ Install [33mupdatePost[39m
+[33mPOST[39m => [33m/api/post/mine/GET[39m ~ Install [33mgetMyPosts[39m
+[33mPOST[39m => [33m/api/post/query/GET[39m ~ Install [33mqueryPosts[39m
+[33mPOST[39m => [33m/api/post/paginate/GET[39m ~ Install [33mqueryPostsAsPaginate[39m
+[33mPOST[39m => [33m/api/post/:postId/GET[39m ~ Install [33mgetPostById[39m
+[33mPOST[39m => [33m/api/post/:postId/stick[39m ~ Install [33mstickPost[39m
+Service [32mapi.posting[39m Initialized
+Initializing [32mapi.shopping[39m
+[33mPOST[39m => [33m/api/order[39m ~ Install [33mcreateOrder[39m
+[33mPOST[39m => [33m/api/payment/byOrder[39m ~ Install [33mcreateOrderAndPayment[39m
+[33mPOST[39m => [33m/api/order/query/GET[39m ~ Install [33mqueryBuyerOrder[39m
+[33mPOST[39m => [33m/api/seller/order/query/GET[39m ~ Install [33mquerySellerOrder[39m
+[33mPOST[39m => [33m/api/order/paginate/GET[39m ~ Install [33mqueryOrdersAsPaginate[39m
+[33mPOST[39m => [33m/api/cartItem[39m ~ Install [33maddCartItem[39m
+[33mDELETE[39m => [33m/api/cartItem/:cartItemId[39m ~ Install [33mdeleteCartItem[39m
+[33mPOST[39m => [33m/api/cartItem/all[39m ~ Install [33mqueryCartItems[39m
+[33mPOST[39m => [33m/api/cartItem/:cartItemId/GET[39m ~ Install [33mgetCartItem[39m
+[33mPOST[39m => [33m/api/seller/apply[39m ~ Install [33mapplySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/GET[39m ~ Install [33mgetAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/verify[39m ~ Install [33mverifySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/updates[39m ~ Install [33mupdateAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/disable[39m ~ Install [33mdisableSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/enable[39m ~ Install [33menableSeller[39m
+[33mPOST[39m => [33m/api/seller/query[39m ~ Install [33mquerySellers[39m
+[33mPOST[39m => [33m/api/seller/paginate/GET[39m ~ Install [33mquerySellersAsPaginate[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/GET[39m ~ Install [33mgetSellerById[39m
+[33mPOST[39m => [33m/api/product/query/GET[39m ~ Install [33mqueryProducts[39m
+[33mPOST[39m => [33m/api/product/paginate/GET[39m ~ Install [33mqueryProductsAsPaginate[39m
+[33mPOST[39m => [33m/api/product/:productId/GET[39m ~ Install [33mgetProduct[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mDELETE[39m => [33m/api/product/:productId[39m ~ Install [33mdeleteProduct[39m
+[33mPOST[39m => [33m/api/products/mine/GET[39m ~ Install [33mgetMyProducts[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/disable[39m ~ Install [33mdisableProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/enable[39m ~ Install [33menableProduct[39m
+[33mPOST[39m => [33m/api/payment[39m ~ Install [33mcreatePayment[39m
+[33mPOST[39m => [33m/api/shop/env/GET[39m ~ Install [33mgetShopEnv[39m
+[33mPOST[39m => [33m/api/payment/:paymentId/sync[39m ~ Install [33msyncPayment[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/delivering[39m ~ Install [33msetOrderDelivering[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/completed[39m ~ Install [33msetOrderCompleted[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/canceled[39m ~ Install [33msetOrderCanceled[39m
+[33mPOST[39m => [33m/api/order/:orderId/GET[39m ~ Install [33mgetOrderById[39m
+Service [32mapi.shopping[39m Initialized
+Initializing [32mapi.transport[39m
+Service [32mapi.transport[39m Initialized
+[33mPOST[39m => [33m/api/receiver[39m ~ Install [33mcreateReceiver[39m
+[33mPOST[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mdeleteReceiver[39m
+[33mPOST[39m => [33m/api/receivers/GET[39m ~ Install [33mgetMyReceivers[39m
+[33mPUT[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mupdateReceiver[39m
+Initializing [32mapi.account[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/token/GET[39m ~ Install [33mgetTokenStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/GET[39m ~ Install [33mwebLoginStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard[39m ~ Install [33mregisterStandard[39m
+[33mPOST[39m => [33m/api/account/me/GET[39m ~ Install [33mgetCurrentAccount[39m
+Service [32mapi.account[39m Initialized
+Initializing [32mpage.default[39m
+Install [33mGET[39m => [33m*[39m 
+Service [32mpage.default[39m Initialized
+[42mAll service initialized[49m
+All services ready
+Failed to get platform information
+10096
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://127.0.0.1:10096/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25370) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+2018-07-28T03:55:43.733Z 'Uncaught Fatal error' { Error: listen EADDRINUSE 127.0.0.1:10096
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1351:14)
+    at listenInCluster (net.js:1392:12)
+    at doListen (net.js:1501:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 10096 }
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 10096 --host 127.0.0.1 --project-name fzs-redwood --project-domain mutoumulao.com
+8081
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://192.168.0.2:8081/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25477) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+Express listen at 192.168.0.2:8081
+Service [32mExpressService[39m Initialized
+Initializing [32mBlobService[39m
+Service [32mBlobService[39m Initialized
+Initializing [32mUploadService[39m
+Service [32mUploadService[39m Initialized
+Initializing [32mTTLSessionStorage[39m
+Service [32mTTLSessionStorage[39m Initialized
+Initializing [32mAuthenticationService[39m
+Service [32mAuthenticationService[39m Initialized
+Initializing [32mAccountService[39m
+Service [32mAccountService[39m Initialized
+Initializing [32mAccountPropService[39m
+Service [32mAccountPropService[39m Initialized
+Initializing [32mPaginateService[39m
+Service [32mPaginateService[39m Initialized
+Initializing [32mAccountQueryService[39m
+Service [32mAccountQueryService[39m Initialized
+Initializing [32mIncrementalIdService[39m
+Service [32mIncrementalIdService[39m Initialized
+Initializing [32mMemoryLockService[39m
+Service [32mMemoryLockService[39m Initialized
+Initializing [32mContactService[39m
+Service [32mContactService[39m Initialized
+Initializing [32mRouteSessionService[39m
+Service [32mRouteSessionService[39m Initialized
+Initializing [32mWechatService[39m
+Service [32mWechatService[39m Initialized
+Initializing [32mWechatPaymentService[39m
+Service [32mWechatPaymentService[39m Initialized
+Initializing [32mShopService[39m
+Service [32mShopService[39m Initialized
+Initializing [32mAutoTaskService[39m
+Service [32mAutoTaskService[39m Initialized
+Initializing [32mEndlessService[39m
+Service [32mEndlessService[39m Initialized
+Initializing [32mInitService[39m
+Service [32mInitService[39m Initialized
+Initializing [32mKeyValueStorage[39m
+Service [32mKeyValueStorage[39m Initialized
+Initializing [32mPlatformService[39m
+Service [32mPlatformService[39m Initialized
+Initializing [32mOrderExtraService[39m
+Service [32mOrderExtraService[39m Initialized
+Initializing [32mPhoneValidationService[39m
+Service [32mPhoneValidationService[39m Initialized
+Initializing [32mPostService[39m
+Service [32mPostService[39m Initialized
+Initializing [32mPostExtraService[39m
+Service [32mPostExtraService[39m Initialized
+Initializing [32mTransportService[39m
+Service [32mTransportService[39m Initialized
+Initializing [32mapi.accountProp[39m
+Service [32mapi.accountProp[39m Initialized
+[33mPOST[39m => [33m/api/account/prop/updates[39m ~ Install [33mupdateAccount[39m
+Initializing [32mapi.accountQuery[39m
+[33mPOST[39m => [33m/api/account/paginate/GET[39m ~ Install [33mqueryAccountsAsPaginate[39m
+Service [32mapi.accountQuery[39m Initialized
+Initializing [32mapi.authenticating[39m
+[33mPOST[39m => [33m/api/register/phone[39m ~ Install [33mregisterWithPhone[39m
+[33mPOST[39m => [33m/api/register/phone/code[39m ~ Install [33msendPhoneVerificationCode[39m
+[33mPOST[39m => [33m/api/register/phone/token/GET[39m ~ Install [33mgetTokenByPhone[39m
+[33mPOST[39m => [33m/api/register/code/token/GET[39m ~ Install [33mgetTokenByCode[39m
+[33mPOST[39m => [33m/api/account/wechat/openId/GET[39m ~ Install [33mgetWechatOpenIdByCode[39m
+[33mPOST[39m => [33m/api/register/wechat/token/GET[39m ~ Install [33mgetTokenByWechat[39m
+[33mPOST[39m => [33m/api/account/bind/wechat[39m ~ Install [33mbindWechat[39m
+[33mPOST[39m => [33m/api/account/current[39m ~ Install [33mgetCurrentAccount[39m
+[33mPOST[39m => [33m/api/account/authentications/GET[39m ~ Install [33mgetAccountAuthentications[39m
+[33mPOST[39m => [33m/api/account/update/password[39m ~ Install [33mupdatePassword[39m
+Service [32mapi.authenticating[39m Initialized
+Initializing [32mapi.echo[39m
+[33mPOST[39m => [33m/api/echo/:name/GET[39m ~ Install [33mecho[39m
+Service [32mapi.echo[39m Initialized
+Initializing [32mapi.platform[39m
+[33mPOST[39m => [33m/api/platform/information[39m ~ Install [33msetInformation[39m
+[33mPOST[39m => [33m/api/platform/information/GET[39m ~ Install [33mgetInformation[39m
+Service [32mapi.platform[39m Initialized
+Initializing [32mapi.posting[39m
+[33mPOST[39m => [33m/api/post[39m ~ Install [33mcreatePost[39m
+[33mDELETE[39m => [33m/api/post/:postId[39m ~ Install [33mdeletePost[39m
+[33mPOST[39m => [33m/api/post/:postId[39m ~ Install [33mupdatePost[39m
+[33mPOST[39m => [33m/api/post/mine/GET[39m ~ Install [33mgetMyPosts[39m
+[33mPOST[39m => [33m/api/post/query/GET[39m ~ Install [33mqueryPosts[39m
+[33mPOST[39m => [33m/api/post/paginate/GET[39m ~ Install [33mqueryPostsAsPaginate[39m
+[33mPOST[39m => [33m/api/post/:postId/GET[39m ~ Install [33mgetPostById[39m
+[33mPOST[39m => [33m/api/post/:postId/stick[39m ~ Install [33mstickPost[39m
+Service [32mapi.posting[39m Initialized
+Initializing [32mapi.shopping[39m
+[33mPOST[39m => [33m/api/order[39m ~ Install [33mcreateOrder[39m
+[33mPOST[39m => [33m/api/payment/byOrder[39m ~ Install [33mcreateOrderAndPayment[39m
+[33mPOST[39m => [33m/api/order/query/GET[39m ~ Install [33mqueryBuyerOrder[39m
+[33mPOST[39m => [33m/api/seller/order/query/GET[39m ~ Install [33mquerySellerOrder[39m
+[33mPOST[39m => [33m/api/order/paginate/GET[39m ~ Install [33mqueryOrdersAsPaginate[39m
+[33mPOST[39m => [33m/api/cartItem[39m ~ Install [33maddCartItem[39m
+[33mDELETE[39m => [33m/api/cartItem/:cartItemId[39m ~ Install [33mdeleteCartItem[39m
+[33mPOST[39m => [33m/api/cartItem/all[39m ~ Install [33mqueryCartItems[39m
+[33mPOST[39m => [33m/api/cartItem/:cartItemId/GET[39m ~ Install [33mgetCartItem[39m
+[33mPOST[39m => [33m/api/seller/apply[39m ~ Install [33mapplySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/GET[39m ~ Install [33mgetAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/verify[39m ~ Install [33mverifySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/updates[39m ~ Install [33mupdateAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/disable[39m ~ Install [33mdisableSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/enable[39m ~ Install [33menableSeller[39m
+[33mPOST[39m => [33m/api/seller/query[39m ~ Install [33mquerySellers[39m
+[33mPOST[39m => [33m/api/seller/paginate/GET[39m ~ Install [33mquerySellersAsPaginate[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/GET[39m ~ Install [33mgetSellerById[39m
+[33mPOST[39m => [33m/api/product/query/GET[39m ~ Install [33mqueryProducts[39m
+[33mPOST[39m => [33m/api/product/paginate/GET[39m ~ Install [33mqueryProductsAsPaginate[39m
+[33mPOST[39m => [33m/api/product/:productId/GET[39m ~ Install [33mgetProduct[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mDELETE[39m => [33m/api/product/:productId[39m ~ Install [33mdeleteProduct[39m
+[33mPOST[39m => [33m/api/products/mine/GET[39m ~ Install [33mgetMyProducts[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/disable[39m ~ Install [33mdisableProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/enable[39m ~ Install [33menableProduct[39m
+[33mPOST[39m => [33m/api/payment[39m ~ Install [33mcreatePayment[39m
+[33mPOST[39m => [33m/api/shop/env/GET[39m ~ Install [33mgetShopEnv[39m
+[33mPOST[39m => [33m/api/payment/:paymentId/sync[39m ~ Install [33msyncPayment[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/delivering[39m ~ Install [33msetOrderDelivering[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/completed[39m ~ Install [33msetOrderCompleted[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/canceled[39m ~ Install [33msetOrderCanceled[39m
+[33mPOST[39m => [33m/api/order/:orderId/GET[39m ~ Install [33mgetOrderById[39m
+Service [32mapi.shopping[39m Initialized
+Initializing [32mapi.transport[39m
+Service [32mapi.transport[39m Initialized
+[33mPOST[39m => [33m/api/receiver[39m ~ Install [33mcreateReceiver[39m
+[33mPOST[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mdeleteReceiver[39m
+[33mPOST[39m => [33m/api/receivers/GET[39m ~ Install [33mgetMyReceivers[39m
+[33mPUT[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mupdateReceiver[39m
+Initializing [32mapi.account[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/token/GET[39m ~ Install [33mgetTokenStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/GET[39m ~ Install [33mwebLoginStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard[39m ~ Install [33mregisterStandard[39m
+[33mPOST[39m => [33m/api/account/me/GET[39m ~ Install [33mgetCurrentAccount[39m
+Service [32mapi.account[39m Initialized
+Initializing [32mpage.default[39m
+Install [33mGET[39m => [33m*[39m 
+Service [32mpage.default[39m Initialized
+[42mAll service initialized[49m
+All services ready
+Failed to get platform information
+8081
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://192.168.0.2:8081/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25522) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+2018-07-28T03:58:52.543Z 'Uncaught Fatal error' { Error: listen EADDRINUSE 192.168.0.2:8081
+    at Object._errnoException (util.js:1024:11)
+    at _exceptionWithHostPort (util.js:1046:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1351:14)
+    at listenInCluster (net.js:1392:12)
+    at doListen (net.js:1501:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '192.168.0.2',
+  port: 8081 }
+Service ExpressService initializing timeout, exit program
+node ./server/src/bootstrap.js --port 8081 --host 192.168.0.2 --project-name fzs-redwood --project-domain mutoumulao.com
+8082
+Register service [32mUploadService[39m
+Register service [32mBlobService[39m
+Load service [32mAccountPropService[39m
+Register service [32mAccountPropService[39m
+Load service [32mAccountQueryService[39m
+Register service [32mAccountQueryService[39m
+Load service [32mAuthenticationService[39m
+Register service [32mAuthenticationService[39m
+Load service [32mAutoTaskService[39m
+Register service [32mAutoTaskService[39m
+Load service [32mContactService[39m
+Register service [32mContactService[39m
+Load service [32mEndlessService[39m
+Register service [32mEndlessService[39m
+Load service [32mInitService[39m
+Register service [32mInitService[39m
+Load service [32mMongodbService[39m
+Register service [32mMongodbService[39m
+Load service [32mOrderExtraService[39m
+Register service [32mOrderExtraService[39m
+Load service [32mPaginateService[39m
+Register service [32mPaginateService[39m
+Load service [32mPhoneValidationService[39m
+Register service [32mPhoneValidationService[39m
+Load service [32mPlatformService[39m
+Register service [32mPlatformService[39m
+Load service [32mPostExtraService[39m
+Register service [32mPostExtraService[39m
+Load service [32mPostService[39m
+Register service [32mPostService[39m
+Load service [32mShopService[39m
+Register service [32mShopService[39m
+Load service [32mTransportService[39m
+Register service [32mTransportService[39m
+Load service [32mapi.accountProp[39m
+Register service [32mapi.accountProp[39m
+Load service [32mapi.accountQuery[39m
+Register service [32mapi.accountQuery[39m
+Load service [32mapi.authenticating[39m
+Register service [32mapi.authenticating[39m
+Load service [32mapi.echo[39m
+Register service [32mapi.echo[39m
+Load service [32mapi.platform[39m
+Register service [32mapi.platform[39m
+Load service [32mapi.posting[39m
+Register service [32mapi.posting[39m
+Load service [32mapi.shopping[39m
+Register service [32mapi.shopping[39m
+Load service [32mapi.transport[39m
+Register service [32mapi.transport[39m
+Register service [32mpage.default[39m
+Register service [32mapi.account[39m
+ExpressService default http://192.168.0.2:8082/
+RouteService default use MongodbService and default secret.
+Initializing [32mMongodbService[39m
+Connecting to database mongodb://localhost:27017/fzs-redwood
+(node:25679) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+b: test1
+a-b-c test1 undefined test2
+Service [32mMongodbService[39m Initialized
+Initializing [32mExpressService[39m
+Express listen at 192.168.0.2:8082
+Service [32mExpressService[39m Initialized
+Initializing [32mBlobService[39m
+Service [32mBlobService[39m Initialized
+Initializing [32mUploadService[39m
+Service [32mUploadService[39m Initialized
+Initializing [32mTTLSessionStorage[39m
+Service [32mTTLSessionStorage[39m Initialized
+Initializing [32mAuthenticationService[39m
+Service [32mAuthenticationService[39m Initialized
+Initializing [32mAccountService[39m
+Service [32mAccountService[39m Initialized
+Initializing [32mAccountPropService[39m
+Service [32mAccountPropService[39m Initialized
+Initializing [32mPaginateService[39m
+Service [32mPaginateService[39m Initialized
+Initializing [32mAccountQueryService[39m
+Service [32mAccountQueryService[39m Initialized
+Initializing [32mIncrementalIdService[39m
+Service [32mIncrementalIdService[39m Initialized
+Initializing [32mMemoryLockService[39m
+Service [32mMemoryLockService[39m Initialized
+Initializing [32mContactService[39m
+Service [32mContactService[39m Initialized
+Initializing [32mRouteSessionService[39m
+Service [32mRouteSessionService[39m Initialized
+Initializing [32mWechatService[39m
+Service [32mWechatService[39m Initialized
+Initializing [32mWechatPaymentService[39m
+Service [32mWechatPaymentService[39m Initialized
+Initializing [32mShopService[39m
+Service [32mShopService[39m Initialized
+Initializing [32mAutoTaskService[39m
+Service [32mAutoTaskService[39m Initialized
+Initializing [32mEndlessService[39m
+Service [32mEndlessService[39m Initialized
+Initializing [32mInitService[39m
+Service [32mInitService[39m Initialized
+Initializing [32mKeyValueStorage[39m
+Service [32mKeyValueStorage[39m Initialized
+Initializing [32mPlatformService[39m
+Service [32mPlatformService[39m Initialized
+Initializing [32mOrderExtraService[39m
+Service [32mOrderExtraService[39m Initialized
+Initializing [32mPhoneValidationService[39m
+Service [32mPhoneValidationService[39m Initialized
+Initializing [32mPostService[39m
+Service [32mPostService[39m Initialized
+Initializing [32mPostExtraService[39m
+Service [32mPostExtraService[39m Initialized
+Initializing [32mTransportService[39m
+Service [32mTransportService[39m Initialized
+Initializing [32mapi.accountProp[39m
+Service [32mapi.accountProp[39m Initialized
+[33mPOST[39m => [33m/api/account/prop/updates[39m ~ Install [33mupdateAccount[39m
+Initializing [32mapi.accountQuery[39m
+[33mPOST[39m => [33m/api/account/paginate/GET[39m ~ Install [33mqueryAccountsAsPaginate[39m
+Service [32mapi.accountQuery[39m Initialized
+Initializing [32mapi.authenticating[39m
+[33mPOST[39m => [33m/api/register/phone[39m ~ Install [33mregisterWithPhone[39m
+[33mPOST[39m => [33m/api/register/phone/code[39m ~ Install [33msendPhoneVerificationCode[39m
+[33mPOST[39m => [33m/api/register/phone/token/GET[39m ~ Install [33mgetTokenByPhone[39m
+[33mPOST[39m => [33m/api/register/code/token/GET[39m ~ Install [33mgetTokenByCode[39m
+[33mPOST[39m => [33m/api/account/wechat/openId/GET[39m ~ Install [33mgetWechatOpenIdByCode[39m
+[33mPOST[39m => [33m/api/register/wechat/token/GET[39m ~ Install [33mgetTokenByWechat[39m
+[33mPOST[39m => [33m/api/account/bind/wechat[39m ~ Install [33mbindWechat[39m
+[33mPOST[39m => [33m/api/account/current[39m ~ Install [33mgetCurrentAccount[39m
+[33mPOST[39m => [33m/api/account/authentications/GET[39m ~ Install [33mgetAccountAuthentications[39m
+[33mPOST[39m => [33m/api/account/update/password[39m ~ Install [33mupdatePassword[39m
+Service [32mapi.authenticating[39m Initialized
+Initializing [32mapi.echo[39m
+[33mPOST[39m => [33m/api/echo/:name/GET[39m ~ Install [33mecho[39m
+Service [32mapi.echo[39m Initialized
+Initializing [32mapi.platform[39m
+[33mPOST[39m => [33m/api/platform/information[39m ~ Install [33msetInformation[39m
+[33mPOST[39m => [33m/api/platform/information/GET[39m ~ Install [33mgetInformation[39m
+Service [32mapi.platform[39m Initialized
+Initializing [32mapi.posting[39m
+[33mPOST[39m => [33m/api/post[39m ~ Install [33mcreatePost[39m
+[33mDELETE[39m => [33m/api/post/:postId[39m ~ Install [33mdeletePost[39m
+[33mPOST[39m => [33m/api/post/:postId[39m ~ Install [33mupdatePost[39m
+[33mPOST[39m => [33m/api/post/mine/GET[39m ~ Install [33mgetMyPosts[39m
+[33mPOST[39m => [33m/api/post/query/GET[39m ~ Install [33mqueryPosts[39m
+[33mPOST[39m => [33m/api/post/paginate/GET[39m ~ Install [33mqueryPostsAsPaginate[39m
+[33mPOST[39m => [33m/api/post/:postId/GET[39m ~ Install [33mgetPostById[39m
+[33mPOST[39m => [33m/api/post/:postId/stick[39m ~ Install [33mstickPost[39m
+Service [32mapi.posting[39m Initialized
+Initializing [32mapi.shopping[39m
+[33mPOST[39m => [33m/api/order[39m ~ Install [33mcreateOrder[39m
+[33mPOST[39m => [33m/api/payment/byOrder[39m ~ Install [33mcreateOrderAndPayment[39m
+[33mPOST[39m => [33m/api/order/query/GET[39m ~ Install [33mqueryBuyerOrder[39m
+[33mPOST[39m => [33m/api/seller/order/query/GET[39m ~ Install [33mquerySellerOrder[39m
+[33mPOST[39m => [33m/api/order/paginate/GET[39m ~ Install [33mqueryOrdersAsPaginate[39m
+[33mPOST[39m => [33m/api/cartItem[39m ~ Install [33maddCartItem[39m
+[33mDELETE[39m => [33m/api/cartItem/:cartItemId[39m ~ Install [33mdeleteCartItem[39m
+[33mPOST[39m => [33m/api/cartItem/all[39m ~ Install [33mqueryCartItems[39m
+[33mPOST[39m => [33m/api/cartItem/:cartItemId/GET[39m ~ Install [33mgetCartItem[39m
+[33mPOST[39m => [33m/api/seller/apply[39m ~ Install [33mapplySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/GET[39m ~ Install [33mgetAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/verify[39m ~ Install [33mverifySeller[39m
+[33mPOST[39m => [33m/api/seller/mine/updates[39m ~ Install [33mupdateAccountSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/disable[39m ~ Install [33mdisableSeller[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/enable[39m ~ Install [33menableSeller[39m
+[33mPOST[39m => [33m/api/seller/query[39m ~ Install [33mquerySellers[39m
+[33mPOST[39m => [33m/api/seller/paginate/GET[39m ~ Install [33mquerySellersAsPaginate[39m
+[33mPOST[39m => [33m/api/seller/:sellerId/GET[39m ~ Install [33mgetSellerById[39m
+[33mPOST[39m => [33m/api/product/query/GET[39m ~ Install [33mqueryProducts[39m
+[33mPOST[39m => [33m/api/product/paginate/GET[39m ~ Install [33mqueryProductsAsPaginate[39m
+[33mPOST[39m => [33m/api/product/:productId/GET[39m ~ Install [33mgetProduct[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mDELETE[39m => [33m/api/product/:productId[39m ~ Install [33mdeleteProduct[39m
+[33mPOST[39m => [33m/api/products/mine/GET[39m ~ Install [33mgetMyProducts[39m
+[33mPOST[39m => [33m/api/product[39m ~ Install [33mcreateProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/disable[39m ~ Install [33mdisableProduct[39m
+[33mPOST[39m => [33m/api/product/:productId/enable[39m ~ Install [33menableProduct[39m
+[33mPOST[39m => [33m/api/payment[39m ~ Install [33mcreatePayment[39m
+[33mPOST[39m => [33m/api/shop/env/GET[39m ~ Install [33mgetShopEnv[39m
+[33mPOST[39m => [33m/api/payment/:paymentId/sync[39m ~ Install [33msyncPayment[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/delivering[39m ~ Install [33msetOrderDelivering[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/completed[39m ~ Install [33msetOrderCompleted[39m
+[33mPOST[39m => [33m/api/order/:orderId/state/canceled[39m ~ Install [33msetOrderCanceled[39m
+[33mPOST[39m => [33m/api/order/:orderId/GET[39m ~ Install [33mgetOrderById[39m
+Service [32mapi.shopping[39m Initialized
+Initializing [32mapi.transport[39m
+Service [32mapi.transport[39m Initialized
+[33mPOST[39m => [33m/api/receiver[39m ~ Install [33mcreateReceiver[39m
+[33mPOST[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mdeleteReceiver[39m
+[33mPOST[39m => [33m/api/receivers/GET[39m ~ Install [33mgetMyReceivers[39m
+[33mPUT[39m => [33m/api/receiver/:receiverId[39m ~ Install [33mupdateReceiver[39m
+Initializing [32mapi.account[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/token/GET[39m ~ Install [33mgetTokenStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard/GET[39m ~ Install [33mwebLoginStandard[39m
+[33mPOST[39m => [33m/api/account/authentication/standard[39m ~ Install [33mregisterStandard[39m
+[33mPOST[39m => [33m/api/account/me/GET[39m ~ Install [33mgetCurrentAccount[39m
+Service [32mapi.account[39m Initialized
+Initializing [32mpage.default[39m
+Install [33mGET[39m => [33m*[39m 
+Service [32mpage.default[39m Initialized
+[42mAll service initialized[49m
+All services ready
+Failed to get platform information
+./util/start: line 14: 23910 Terminated: 15          node ./server/src/bootstrap.js --port $SERVER_PORT --host $SERVER_HOST --project-name $PROJECT_NAME --project-domain $PROJECT_DOMAIN $@
+node ./server/src/bootstrap.js --port 25109 --host 0.0.0.0 --project-name fzs-redwood --project-domain mutoumulao.com
+./util/start: line 14: 25477 Terminated: 15          node ./server/src/bootstrap.js --port $SERVER_PORT --host $SERVER_HOST --project-name $PROJECT_NAME --project-domain $PROJECT_DOMAIN $@
+./util/start: line 14: 25679 Terminated: 15          node ./server/src/bootstrap.js --port $SERVER_PORT --host $SERVER_HOST --project-name $PROJECT_NAME --project-domain $PROJECT_DOMAIN $@
+node ./server/src/bootstrap.js --port 8081 --host 192.168.0.2 --project-name fzs-redwood --project-domain mutoumulao.com
+node ./server/src/bootstrap.js --port 8082 --host 192.168.0.2 --project-name fzs-redwood --project-domain mutoumulao.com
+./util/start: line 14: 25323 Terminated: 15          node ./server/src/bootstrap.js --port $SERVER_PORT --host $SERVER_HOST --project-name $PROJECT_NAME --project-domain $PROJECT_DOMAIN $@
+node ./server/src/bootstrap.js --port 10096 --host 127.0.0.1 --project-name fzs-redwood --project-domain mutoumulao.com

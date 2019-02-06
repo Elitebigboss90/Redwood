@@ -1,0 +1,120 @@
+.abstract-button {
+    &,
+    &.base {
+        // common
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        border: none;
+        border-radius: @button-br;
+        cursor: pointer;
+        outline: none;
+        transition: all 300ms;
+    }
+
+    &.-default {
+        // states
+        // normal hover active disabled
+        // default colors or other styles
+        // may be overrided by others
+        &,
+        &.normal {
+            color: @button-text-color;
+            background-color: @button-bg;
+            border: @button-bd;
+        }
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            border: @button-hover-bd;
+            color: @button-hover-text-color;
+        }
+        &.disabled,
+        &[disabled] {
+            opacity: 0.5;
+            cursor: auto;
+            pointer-events: none;
+        }
+    }
+
+    & {
+        // sizes
+        &.-xs {
+            min-width: @button-width-xs;
+            height: @button-height-xs;
+            line-height: @button-height-xs - 2;
+            font-size: @button-s-font-size;
+            padding: 0 @gutter-s;
+        }
+        &.-s {
+            min-width: @button-width-s;
+            height: @button-height-s;
+            line-height: @button-height-s - 2;
+            font-size: @button-s-font-size;
+            padding: 0 @gutter;
+        }
+        &,
+        &.-m {
+            min-width: @button-width;
+            height: @button-height;
+            line-height: @button-height - 2;
+            font-size: @button-m-font-size;
+            padding: 0 @gutter-l;
+        }
+        &.-l {
+            font-size: @button-l-font-size;
+        }
+    }
+
+    & {
+        // colors
+        &.-accent {
+            // may need to override all states
+            &,
+            &.normal {
+                color: @accent-button-text-color;
+                background-color: @accent-button-bg;
+                border: @accent-button-bd;
+            }
+            &:hover {
+                border: @accent-button-hover-bd;
+                background: @accent-button-hover-bg;
+                color: @accent-button-hover-text-color;
+            }
+        }
+        &.-primary {}
+        &.-danger {}
+        &.-secondary {}
+    }
+
+    & {
+        // depths
+        &.-flat {
+            // may need to override all colors of all states
+            &,
+            &.-default {
+                &,
+                &.normal,
+                &:hover {
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+            &.-accent {
+                color: @flat-accent-button-text-color;
+            }
+        }
+        &.-raised {
+            box-shadow: @shadow;
+        }
+    }
+    &.-fullwidth {
+        display: block;
+    }
+}
+
+.button {
+    .abstract-button;
+    .abstract-button.-default;
+}

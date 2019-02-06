@@ -1,0 +1,14 @@
+@hint-text-color: rgba(0, 0, 0, 0.38);
+@error-hint-text-color: #f44;
+
+.abstract-hint(@text-color: @hint-text-color) {
+    color: @text-color;
+}
+
+.hint {
+    .abstract-hint();
+}
+
+.error-hint {
+    .abstract-hint(@text-color: @error-hint-text-color);
+}

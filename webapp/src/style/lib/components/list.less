@@ -1,0 +1,23 @@
+.list-tile {
+    & {
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        padding: @gutter*2 0;
+    }
+    >.content-area {
+        flex: 1;
+    }
+    >.action-area {
+        & {
+            display: flex;
+            align-items: center;
+        } // .button+.button {
+        //     margin-left: @gutter-s;
+        // }
+    }
+}
+
+.list-tile+.list-tile {
+    border-top: @divider;
+}

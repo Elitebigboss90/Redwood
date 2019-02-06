@@ -1,0 +1,31 @@
+<div class="panel">
+    <div class="title-area">
+        <div class="title">
+            使用帮助
+        </div>
+    </div>
+    <div class="content-area">{{content}}</div>
+    <div class="action-area">
+        <div data-id="edit" class="button -accent">
+            修改
+        </div>
+    </div>
+</div>
+
+<style>
+    & {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        box-sizing: border-box;
+        >.content-area {
+            flex: 1;
+            overflow: auto;
+        }
+    }
+
+    >.content-area {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+</style>

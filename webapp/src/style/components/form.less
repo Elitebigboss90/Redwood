@@ -1,0 +1,44 @@
+.form {
+    >.form-control {
+        display: flex; // align-items: center;
+        padding: 10px 20px;
+        >.label-area {
+            width: 30%;
+            max-width: 90px;
+            margin-right: 20px;
+            text-align: right;
+            .hint {
+                color: @hint-text-color;
+                font-size: @font-size-s;
+                text-align: left;
+            }
+            .label {
+                line-height: @control-line-height;
+                height: @control-line-height;
+            }
+        }
+        >.control-area {
+            flex: 1;
+            >.text-field {
+                width: 100%;
+            }
+        }
+        .product-option-list-tile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    >.form-control.unavailable {
+        display: none;
+    }
+
+    >.form-control.readonly {
+        .text-field,
+        .text-field:focus {
+            border-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "sdkVersion": "27.0.0",
+    "name": "redwood",
+    "slug": "redwood",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/app.png",
+    "splash": {
+      "image": "./assets/images/launchimage_logo.png"
+    },
+    "assetBundlePatterns": [
+      "assets/images/*"
+    ],
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "bundleIdentifier": "com.mutoumulao.expo.redwood",
+      "buildNumber": "1.0.0",
+      "publishBundlePath": "ios/redwood/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/redwood/Supporting/shell-app-manifest.json"
+    },
+    "android": {
+      "package": "com.mutoumulao.expo.redwood",
+      "permissions": [
+        "CAMERA",
+        "READ_INTERNAL_STORAGE",
+        "WRITE_INTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "isDetached": true,
+    "detach": {
+      "scheme": "exp199eb57bdf1b4039bc87882fdfb37ee9",
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.5.10-sdk27.0.0-7e6dd135-e649-48e2-ab7c-e76521ce6259.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.5.3-sdk27.0.0-408c8d77-8d1f-4784-b7b4-93826250663a.tar.gz"
+    }
+  }
+}

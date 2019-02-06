@@ -1,0 +1,40 @@
+#!/bin/bash
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+
+cd $DIR/../
+. ./meta/env
+
+[ ! -d $DIR/../meta/server ] && echo "Please symlink a server from avalon to /meta/server before release" && exit 1
+. $DIR/../meta/server/env
+
+
+echo "Init https at server" $ServerName
+echo "Using" $ServerUser@$ServerIP
+ProjectName=$PROJECT_NAME
+path=$RELEASE_PATH
+
+https=`cat ./meta/https`
+if [ $https = "certbot" ];then
+    ssh $ServerUser@$ServerIP -i $ServerRSA "certbot --version && exit 0;sudo apt-get update ;sudo apt-get install -y software-properties-common ;sudo add-apt-repository ppa:certbot/certbot ;sudo apt-get update ;sudo apt-get install -y python-certbot-nginx"
+
+    ip=`host $PROJECT_DOMAIN | awk '/has address/ { print $4 }' | head -n1`
+    if [ "$ip" != "$ServerIP" ];then
+        >&2 echo Please point domain $PROJECT_DOMAIN to release ip $ServerIP
+        exit 1
+    fi
+    ssh $ServerUser@$ServerIP -i $ServerRSA "[ ! -f /etc/letsencrypt/live/$PROJECT_DOMAIN/fullchain.pem ] && sudo nginx -s stop && sudo certbot --standalone certonly --agree-tos --non-interactive -d $PROJECT_DOMAIN -m $PROJECT_CONTACT;sudo systemctl start nginx"
+    exit 0
+else
+    echo "Unknown https type"
+    exit 1
+fi
+
+

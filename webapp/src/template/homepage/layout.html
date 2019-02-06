@@ -1,0 +1,500 @@
+<div>
+    <div class="header"></div>
+    <div class="bg-image"></div>
+    <div class="container-area">
+        <div class="content-area">
+            <div class="title-area">
+                买卖红木上木头木佬
+                <!-- <br>  -->
+
+            </div>
+            <div class="subtitle">
+                厂家即是商家，一个值得信赖的红木买卖平台
+            </div>
+            <div class="action-area">
+                <a class="download-button android" href="http://sj.qq.com/myapp/detail.htm?apkName=com.mutoumulao.expo.redwood">
+                    安卓客户端
+                </a>
+                <a class="download-button apple " target="_blank" href="https://itunes.apple.com/cn/app/木头木佬/id1377094917?mt=8">App Store
+                </a>
+            </div>
+            <!-- <p class="download-hint">
+                * 微信不支持apk下载，请在浏览器打开后下载apk
+            </p> -->
+        </div>
+        <div class="image-area">
+            <div class="bg-pattern"></div>
+            <div class="image-phone">
+                <div class="phone"></div>
+                <div class="mask">
+                    <div class="slide {{direction}}" data-id="actionArea">
+                        <div class="homepage"></div>
+                        <div class="spuviewer"></div>
+                        <div class="homepage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .download-hint {
+        color: #999;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    >.header {
+        background-image: url("@{img-src}/logo.png");
+        background-repeat: no-repeat;
+        background-size: 160px 74px;
+        position: relative;
+        z-index: 1000;
+        margin-top: 40px;
+        padding-top: 80px;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    >.bg-image {
+        width: 553px;
+        height: 615px;
+        background-image: url("@{img-src}/decorating.png");
+        background-repeat: no-repeat;
+        background-size: 553px 615px;
+        position: fixed;
+        top: 10%;
+        right: 22%;
+    }
+
+    >.container-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 60px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        box-sizing: border-box;
+    }
+
+    >.container-area>.content-area {
+        display: flex;
+        flex-direction: column;
+        >.title-area {
+            font-size: 36px;
+            line-height: 54px;
+            color: #333;
+            font-weight: 550;
+        }
+        >.subtitle {
+            margin-top: 8px;
+            font-size: 20px;
+            color: #bbb;
+        }
+        >.action-area {
+            display: flex;
+            margin-top: 32px;
+            >.download-button {
+                padding: 8px 16px;
+                border-radius: 4px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            >.android {
+                background-color: #CA2D30;
+                color: white;
+                transition: all 300ms;
+                background-image: url("@{icon-src}/icon-android.png");
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                background-position: 16px 6px;
+                padding-left: 44px;
+                &:hover {
+                    background-color: #B61215;
+                    box-shadow: 0px 0px 0px 2px rgba(202, 45, 48, 0.2);
+                }
+            }
+            >.apple {
+                border: 1px solid #CA2D30;
+                color: #CA2D30;
+                transition: all 300ms;
+                background-image: url("@{icon-src}/icon-apple.png");
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                background-position: 16px 6px;
+                padding-left: 44px;
+                &:hover {
+                    box-shadow: 0px 0px 0px 2px rgba(202, 45, 48, 0.2);
+                }
+            }
+        }
+    }
+
+    >.container-area>.image-area {
+        display: flex;
+        position: relative;
+        >.bg-pattern {
+            background-image: url("@{img-src}/bg.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 444px;
+            width: 444px;
+            /* background-position: 16px 6px; */
+            position: absolute;
+        }
+        >.image-phone {
+            display: flex;
+            .mask {
+                width: 216px;
+                height: 468px;
+                overflow: hidden;
+                position: relative;
+                left: -128px;
+                top: -10px;
+                z-index: 100;
+                border: 1px solid transparent;
+                border-radius: 24px;
+            }
+            >.phone {
+                background-image: url("@{img-src}/border.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                height: 488px;
+                width: 245px;
+                position: relative;
+                left: 100px;
+                top: -20px;
+            }
+
+
+            .slide {
+                display: flex;
+                position: absolute;
+                top: -10px;
+                left: 118px;
+                transition: all 600ms;
+                &.one {
+                    transform: translate(0, 0);
+
+                }
+                &.two {
+                    transform: translate(-33.3%, 0);
+                }
+                &.three {
+                    transform: translate(-66.6%, 0);
+                }
+                >.homepage {
+                    background-image: url("@{img-src}/homepage.png");
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    height: 468px;
+                    width: 216px;
+                    position: relative;
+                    left: -128px;
+                    top: 10px;
+                    margin-left: 10px;
+                }
+                >.spuviewer {
+                    background-image: url("@{img-src}/spuviewer.png");
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    height: 468px;
+                    width: 216px;
+                    position: relative;
+                    left: -128px;
+                    top: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+        .header {
+            background-size: 80px 37px;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+        >.bg-image {
+            display: none;
+        }
+        .container-area {
+            padding: 10px 20px;
+            margin: 0 auto;
+            top: 50%;
+            height: 100%;
+
+        }
+        .container-area>.content-area {
+            width: 100%;
+            order: 1;
+            margin-top: 100%;
+            margin-left: -100%;
+        }
+        .container-area>.content-area>.title-area {
+            width: 100%;
+            height: 10%;
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 24%;
+            /* padding-bottom: 10px; */
+        }
+        .container-area>.content-area>.subtitle {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .container-area>.content-area>.action-area {
+            display: block;
+            margin: 0 auto;
+            font-size: 0.8rem;
+            margin-top: 12px;
+        }
+        .container-area>.content-area>.action-area>.download-button {
+            margin-bottom: 6%;
+            margin-right: 0;
+            padding: 4% 0;
+            padding-left: 32px;
+            padding-right: 8px;
+            width: 80px;
+        }
+        .container-area>.content-area>.action-area>.android,
+        .container-area>.content-area>.action-area>.apple {
+            background-position: 8% 48%;
+        }
+        .container-area>.image-area {
+            flex: 1;
+            order: -1;
+            width: 120px;
+            height: 240px;
+            margin-top: -28%;
+            justify-content: center;
+        }
+        .container-area>.image-area>.bg-pattern {
+            height: 200px;
+            width: 200px;
+            background-position: 0 -10px;
+
+        }
+        .container-area>.image-area>.image-phone {
+            display: flex;
+            justify-content: center;
+        }
+        .container-area>.image-area>.image-phone>.phone {
+            height: 240px;
+            width: 120px;
+            left: 32%;
+            padding-right: 0;
+        }
+        .container-area>.image-area>.image-phone>.mask {
+            width: 156px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            left: -66px;
+            top: -10px;
+            z-index: 100;
+            border: 1px solid transparent;
+            border-radius: 24px;
+        }
+        .container-area>.image-area>.image-phone .slide {
+            >.homepage,
+            >.spuviewer {
+                height: 300px;
+                width: 140px;
+                position: relative;
+                left: -122px;
+                top: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container-area>.content-area>.title-area {
+            font-size: 36px;
+            line-height: 36px;
+            padding-bottom: 10px;
+        }
+        .container-area>.content-area>.subtitle {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .header {
+            background-size: 160px 74px;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+        .container-area>.content-area>.action-area>.android,
+        .container-area>.content-area>.action-area>.apple {
+            background-position: 8% 48%;
+        }
+        .container-area>.image-area>.bg-pattern {
+            height: 400px;
+            width: 400px;
+        }
+        .container-area>.image-area>.image-phone>.phone {
+            height: 460px;
+            width: 230px;
+            left: 22%;
+        }
+        .container-area>.image-area {
+            width: 100%;
+            margin-top: -60%;
+        }
+        .container-area>.content-area {
+            width: 100%;
+            -ms-flex-order: 1;
+            order: 1;
+            margin-top: 80%;
+        }
+        .container-area>.content-area>.action-area>.download-button {
+            padding: 10px;
+            padding-left: 48px;
+            font-size: 18px;
+            width: 100px;
+        }
+        .container-area>.image-area>.image-phone>.mask {
+            width: 216px;
+            height: 440px;
+            left: -28%;
+            top: -10px;
+        }
+        .container-area>.image-area>.image-phone .slide {
+            >.homepage,
+            >.spuviewer {
+                height: 438px;
+                width: 208px;
+                left: -120px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header {
+            background-size: 80px 37px;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+        .container-area>.content-area>.title-area {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .container-area>.content-area>.subtitle {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        .container-area>.image-area>.bg-pattern {
+            height: 300px;
+            width: 300px;
+        }
+        .container-area>.image-area>.image-phone>.phone {
+            height: 320px;
+            width: 160px;
+            left: 24%;
+        }
+        .container-area>.image-area {
+            margin-top: -76%;
+        }
+        .container-area>.content-area {
+            width: 100%;
+            order: 1;
+            margin-top: 140%;
+            margin-left: -100%;
+        }
+        .container-area>.content-area>.action-area>.download-button {
+            padding: 8px;
+            padding-left: 40px;
+            padding-right: 12px;
+            font-size: 14px;
+            width: 80px;
+        }
+        .container-area>.image-area>.image-phone>.mask {
+            width: 156px;
+            height: 300px;
+            left: -25%;
+        }
+        .container-area>.image-area>.image-phone .slide {
+            >.homepage,
+            >.spuviewer {
+                height: 300px;
+                width: 140px;
+                left: -122px;
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        .container-area>.content-area>.title-area {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .container-area>.content-area>.subtitle {
+            font-size: 14px;
+        }
+        .header {
+            background-size: 80px 37px;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+        .container-area>.content-area {
+            width: 100%;
+            order: 1;
+            margin-top: 120%;
+            margin-left: -100%;
+        }
+        .container-area>.image-area>.bg-pattern {
+            height: 200px;
+            width: 200px;
+        }
+        .container-area>.image-area>.image-phone>.phone {
+            height: 240px;
+            width: 120px;
+            left: 24%;
+        }
+
+        .container-area>.image-area {
+
+            margin-top: -30%;
+        }
+        .container-area>.content-area>.action-area>.download-button {
+            padding: 4px;
+            padding-left: 32px;
+            padding-right: 8px;
+            font-size: 12px;
+            width: 70px;
+        }
+        .container-area>.image-area>.image-phone>.mask {
+            width: 118px;
+            height: 220px;
+            left: -25%;
+        }
+        .container-area>.image-area>.image-phone .slide {
+            >.homepage,
+            >.spuviewer {
+                height: 220px;
+                width: 100px;
+                left: -36%;
+
+            }
+        }
+    }
+</style>

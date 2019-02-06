@@ -1,0 +1,50 @@
+{
+  "name": "redwood",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^16.0.41",
+    "@types/react-native": "^0.52.19",
+    "jest-expo": "^27.0.0",
+    "react-test-renderer": "16.2.0",
+    "typescript": "^2.7.2"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@types/expo": "^26.0.3",
+    "@types/react": "^16.0.40",
+    "@types/react-native": "^0.52.18",
+    "@types/react-native-fs": "^2.8.1",
+    "@types/react-navigation": "^1.2.3",
+    "exp": "^54.0.1",
+    "expo": "^27.0.2",
+    "leaf-ts": "^2.15.42",
+    "moment": "^2.22.2",
+    "react": "^16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+    "react-native-actionsheet": "^2.4.1",
+    "react-native-fs": "^2.10.14",
+    "react-native-image-crop-picker": "^0.20.3",
+    "react-native-image-picker": "^0.26.10",
+    "react-native-image-zoom-viewer": "^2.1.3",
+    "react-native-keyboard-aware-scroll-view": "^0.6.0",
+    "react-native-modal": "^6.5.0",
+    "react-native-permissions": "^1.1.1",
+    "react-native-root-siblings": "^3.1.0",
+    "react-native-root-toast": "^3.0.1",
+    "react-native-scripts": "^1.14.0",
+    "react-native-wechat": "^1.9.9",
+    "react-navigation": "^1.5.8",
+    "root-ts": "^0.9.42"
+  }
+}

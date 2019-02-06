@@ -1,0 +1,88 @@
+<div class="form-control {{loading}} {{readonly}}">
+    <div class="label-area">
+        <div class="label">
+            {{displayName}}
+        </div>
+        <div class="hint">
+            {{hint}}
+        </div>
+    </div>
+    <div class="control-area">
+        <div class="upload-field-area">
+            <input type="file" data-id="input" multiple="multiple">
+        </div>
+        <div class="empty-hint-area">
+            <div class="hint text-field">
+                {{emptyHint}}
+            </div>
+        </div>
+        <div class="image-grid" data-list="imageList">
+            <template>
+                <div class="grid-tile {{loading}}">
+                    <img class="img" src="{{src}}" alt="">
+                    <div class="loading-hint">
+                        正在上传
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+
+<style>
+    .upload-field-area {
+        border: @border;
+        padding: @gutter;
+        margin-bottom: @gutter;
+    }
+
+    .image-grid {
+        & {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        >.grid-tile {
+            flex-shrink: 0;
+        }
+    }
+
+    .image-grid>.grid-tile {
+        & {
+            position: relative;
+            height: 120px;
+            width: 120px;
+            border: @border;
+            margin: @gutter-s;
+        }
+        >.img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: contain;
+        }
+        >.loading-hint {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        >.loading-hint {
+            display: none;
+        }
+        &.loading {
+            >.loading-hint {
+                display: block
+            }
+        }
+    }
+
+    &.readonly {
+        .upload-field-area {
+            display: none
+        }
+    }
+</style>

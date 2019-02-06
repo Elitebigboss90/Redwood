@@ -1,0 +1,73 @@
+<div class="layout -with-sider">
+    <div class="layout-sider">
+        <div class="title-area">
+            木头木佬App 管理后台
+        </div>
+        <div class="content-area">
+            <div class="menu -dark" data-list="entryList">
+                <template>
+                    <div class="menu-tile {{selected}}">
+                        <div class="title-area">
+                            {{name}}
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <div class="layout-content">
+        <div class="toolbar">
+        </div>
+        <div class="content" data-id="content">
+        </div>
+    </div>
+</div>
+
+<style>
+    >.layout-sider {
+        & {
+            display: flex;
+            width: 220px;
+            flex-direction: column;
+        }
+        >.content-area {
+            flex: 1;
+            >.menu {
+                box-sizing: border-box;
+                padding-top: @gutter;
+                height: 100%;
+            }
+        }
+        >.title-area {
+            display: block;
+            background-color: @accent-bg-h;
+            color: @white;
+            line-height: @line-height-xl;
+            height: @line-height-xl;
+            font-size: @font-size-xl;
+            padding: @gutter;
+        }
+    }
+
+    >.layout-content {
+        & {
+            background-color: @bg-light;
+            display: flex;
+            flex-direction: column;
+        }
+        >.toolbar {
+            line-height: @line-height-xl;
+            height: @line-height-xl;
+            padding: @gutter;
+            background-color: @accent-bg-l;
+        }
+        >.content {
+            flex: 1;
+            position: relative;
+
+        }
+        >.content>.panel {
+            margin: @gutter-xl;
+        }
+    }
+</style>

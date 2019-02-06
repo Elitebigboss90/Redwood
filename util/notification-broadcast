@@ -1,0 +1,27 @@
+#!/bin/bash
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+# url="https://hook.bearychat.com/=bw9wd/incoming/db3496029696c0fa8774b14fdb957f0e"
+
+echo $1
+
+curl "$1" \
+  -H 'Content-Type: application/json' \
+  -d '
+{
+  "text": "'"$2"'",
+  "attachments": [
+    {
+      "title": "link",
+      "url": "'"$3"'",
+      "color": "#ffa500"
+    }
+  ]
+}'
+

@@ -1,0 +1,113 @@
+#!/bin/bash
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+# tokenUrl="~/.dev-init/gitlab-token"
+# tempUrl="/tmp/gitlab.request.json"
+
+webHook=$1
+projectName=$2
+gitlabDomain=$3
+
+usage(){
+    echo "gitlab-init"
+    exit 1;
+}
+
+set -e 
+[ -z "$webHook" ] && usage
+[ -z "$projectName" ] && usage
+[ -z "$gitlabDomain" ] && usage
+
+set +e
+
+if [ ! -d ~/.dev-init ]; then
+    echo "mkdir .dev-init"
+    mkdir ~/.dev-init >/dev/null 2>&1
+fi
+
+if [ ! -e "$TEMP_FOLDER/gitlab.request.json" ]; then
+    echo "touch gitlab.request.json"
+    touch $TEMP_FOLDER/gitlab.request.json >/dev/null 2>&1
+fi   
+
+pushProject(){
+    rm -f $TEMP_FOLDER/gitlab.request.json >/dev/null 2>&1
+    
+    echo -e "add hook\n"
+
+    curl -s -d 'private_token='$privateToken'&url='$webHook'&push_events=true&issues_events=true&merge_requests_events=true&tag_push_events=true&note_events=true&pipeline_events=true&wiki_events=true&enable_ssl_verification=true' "http://"$gitlabDomain"/api/v4/projects/"$2"/hooks"
+
+    cd $DIR/../
+    git remote add origin $1
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin master
+}
+
+createOriginProject(){
+    echo -e "Create origin project\n"
+
+    curl -s -d 'private_token='$privateToken'&name='$projectName'' "http://"$gitlabDomain"/api/v4/projects" > $TEMP_FOLDER/gitlab.request.json
+
+    id=`cat $TEMP_FOLDER/gitlab.request.json | jq '.id'`
+    projectUrl=`cat $TEMP_FOLDER/gitlab.request.json | jq '.ssh_url_to_repo' | sed 's/\"//g'`
+
+    if [ ! -n "$id" ] || [ ! -n "$projectUrl" ]; then  
+        echo "create gitlab origin project failed, please create manually..."
+    else 
+        pushProject "$projectUrl" "$id"
+    fi
+}
+
+requestAccountInfo(){
+    while [ -z "$loginName" ];do
+        printf "Username or email: "
+        read loginName
+    done
+    while [ -z "$loginPassword" ];do
+        printf "Password: "
+        read -s loginPassword
+    done
+}
+
+login(){
+    echo -e "Please Login Gitlab\n"        
+    requestAccountInfo
+
+    privateToken=`curl -X POST -s "http://"$gitlabDomain"/api/v3/session?login="$loginName"&password="$loginPassword"" | jq '.private_token'`
+    
+    if [ ! -n "$privateToken" ]; then
+        echo -e 'Login Failed\n'
+        loginName=""
+        loginPassword=""
+        login
+    else
+        echo $privateToken  > ~/.dev-init/gitlab-token
+        getToken
+    fi
+}
+
+getToken(){
+    if [ -f ~/.dev-init/gitlab-token ]; then
+        token=`cat ~/.dev-init/gitlab-token`
+        if [ ! -n "$token" ]; then
+            login
+        else 
+            privateToken=`cat ~/.dev-init/gitlab-token | sed 's/\"//g'` 
+            createOriginProject
+        fi
+    else
+        login
+    fi
+}
+
+
+getToken    
+

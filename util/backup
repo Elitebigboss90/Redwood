@@ -1,0 +1,31 @@
+#!/bin/bash
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+    SOURCE="$(readlink "$SOURCE")"
+    [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+
+cd $DIR/../
+. ./meta/env
+
+[ ! -d $DIR/../meta/server ] && echo "Please symlink a server from avalon to /meta/server before release" && exit 1
+. $DIR/../meta/server/env
+
+storagePath="/storage/fzc"
+
+backupPath="./backup"
+
+rm -rf $backupPath
+
+echo "export mongodb database"
+ssh $ServerUser@$ServerIP -i $ServerRSA "sudo mongodump --db $PROJECT_NAME --out $storagePath/dbbackup"
+
+echo "download storage"
+mkdir -p $backupPath
+rsync -e "ssh -i $ServerRSA" -aPziou  $ServerUser@$ServerIP:$storagePath $backupPath
+
+# rsync -e "ssh -i meta/server/id_rsa" -aPziou root@120.55.44.120:/etc/letsencrypt/live/mutoumulao.com ./backup
+# rsync -e "ssh -i meta/server/id_rsa" -aPziou ./backup/mutoumulao.com root@116.62.112.50:/etc/letsencrypt/live

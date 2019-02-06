@@ -1,0 +1,1 @@
+../../../expo/src/service/uploadService.ts

@@ -1,0 +1,28 @@
+<div>
+  <div data-list="items">
+    <template>
+      <div class="list-item">
+        {{itemName}}
+      </div>
+    </template>
+  </div>
+</div>
+
+<style>
+  & {
+    color: red;
+  }
+</style>
+
+<script data-role="test">
+  {
+    items: [
+      {
+        itemName: "hello 1"
+      },
+      {
+        itemName: "hello 2"
+      }
+    ]
+  }
+</script>
